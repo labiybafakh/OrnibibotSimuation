@@ -7,6 +7,7 @@ char error[1000];
 mjModel* m;
 mjData* d;
 
+int testin;
 int main(void)
 {
     // load model from file and check for errors
