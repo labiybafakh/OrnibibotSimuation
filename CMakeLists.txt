@@ -1,13 +1,15 @@
 cmake_minimum_required(VERSION 3.22)
 project(Simulation)
 
+
 set(CMAKE_CXX_STANDARD 14)
-set(MUJOCO_INCLUDE_DIR "/home/ntlab/mujoco-2.2.0/include")
-set(MUJOCO_LIBRARY_DIR "/home/ntlab/mujoco-2.2.0/lib")
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
 
-include_directories(/include/mujoco/)
 add_executable(Simulation main.cpp)
-
-target_include_directories(Simulation PUBLIC ${MUJOCO_INCLUDE_DIR})
+include(FindPkgConfig)
+find_package(mujoco REQUIRED)
+find_package(glfw REQUIRED)
+include_directories(${MUJOCO_INCLUDE_DIR} ${GLFW_INCLUDE_DIR})
+target_link_libraries(${PROJECT_NAME} ${MUJOCO_LIBRARY} ${GLFW_LIBRARY})
 
 

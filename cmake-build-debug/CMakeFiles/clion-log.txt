@@ -1,4 +1,4 @@
-/snap/clion/198/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/198/bin/ninja/linux/ninja -G Ninja -S /home/ntlab/mujoco-2.2.0/Simulation -B /home/ntlab/mujoco-2.2.0/Simulation/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/ntlab/Documents/Code/OrnibibotSimuation -B /Users/ntlab/Documents/Code/OrnibibotSimuation/cmake-build-debug
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/ntlab/mujoco-2.2.0/Simulation/cmake-build-debug
+-- Build files have been written to: /Users/ntlab/Documents/Code/OrnibibotSimuation/cmake-build-debug
